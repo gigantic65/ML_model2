@@ -813,9 +813,9 @@ def app(session_in):
     if example == 'Select ▼':
         pass
     elif example == '예제 데이터1':
-        uploaded_file = './example1.csv'
+        uploaded_file = 'example1.csv'
     elif example == '예제 데이터2':
-        uploaded_file = './example2.csv'
+        uploaded_file = 'example2.csv'
     
 #=========================================================================================================================================================================
 
