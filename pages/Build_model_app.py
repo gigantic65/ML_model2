@@ -816,6 +816,12 @@ def app(session_in):
         uploaded_file = 'example1.csv'
     elif example == '예제 데이터2':
         uploaded_file = 'example2.csv'
+        
+    if st.sidebar.checkbox('Download Example1'):
+        uploaded_file = './Example1.csv'
+        
+    if st.sidebar.checkbox('Download Example2'):
+        uploaded_file = './DCB_test4.CSV'
     
 #=========================================================================================================================================================================
 
