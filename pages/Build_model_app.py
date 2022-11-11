@@ -808,20 +808,12 @@ def app(session_in):
     st.sidebar.subheader('1. 데이터 가공')
 
     uploaded_file = st.sidebar.file_uploader("데이터 파일(.csv) 업로드", type=["csv"])
-    
-    example = st.sidebar.selectbox("예제 데이터",('Select ▼','예제 데이터1', '예제 데이터2'))
-    if example == 'Select ▼':
-        pass
-    elif example == '예제 데이터1':
-        uploaded_file = 'example1.csv'
-    elif example == '예제 데이터2':
-        uploaded_file = 'example2.csv'
-        
+           
     if st.sidebar.checkbox('Download Example1'):
         uploaded_file = './Example1.csv'
         
     if st.sidebar.checkbox('Download Example2'):
-        uploaded_file = './DCB_test4.CSV'
+        uploaded_file = './Example2.csv'
     
 #=========================================================================================================================================================================
 
@@ -2187,8 +2179,8 @@ def app(session_in):
                     
                     st.markdown('**_· Option2) 학습 완료 모델(.pkl) & 학습 데이터(.xlsx) 저장하기_**')
                     #st_pandas_to_csv_download_link(df33, file_name = "01_Train_data.csv")
-                    download_data_xlsx(df33, num_y)
-                    download_model(k,model)
+                    #download_data_xlsx(df33, num_y)
+                    #download_model(k,model)
                     st.caption("**_※ 저장 폴더 지정 방법 : 마우스 우클릭 → [다른 이름으로 링크 저장]_**") 
                     
                     st.write("")
